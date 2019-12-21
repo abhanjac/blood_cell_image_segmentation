@@ -18,19 +18,13 @@ So overall there are **9** objects and background, so **10** classes in the data
 * **2. Basophil** ![](https://placehold.it/20/008080?text=+)
 * **3. Neutrophil** ![](https://placehold.it/20/fbbebe?text=+)
 * **4. Lymphocytes** ![](https://placehold.it/20/808000?text=+)
-* **5. Monocytes** ![](https://placehold.it/20/00ffff?text=+)
-* **6. Thrombocytes** ![](https://placehold.it/20/00ffff?text=+)
-* **7. Platelet Clumps** ![](https://placehold.it/20/00ffff?text=+)
-* **8. Infected RBC** ![](https://placehold.it/20/00ffff?text=+)
-* **9. Healthy RBC** ![](https://placehold.it/20/00ffff?text=+)
-* **10. background** ![](https://placehold.it/20/00ffff?text=+)
+* **5. Monocytes** ![](https://placehold.it/20/000080?text=+)
+* **6. Thrombocytes** ![](https://placehold.it/20/ffff00?text=+)
+* **7. Platelet Clumps** ![](https://placehold.it/20/ff00ff?text=+)
+* **8. Infected RBC** ![](https://placehold.it/20/ff0000?text=+)
+* **9. Healthy RBC** ![](https://placehold.it/20/00ff00?text=+)
+* **10. background** ![](https://placehold.it/20/000000?text=+)
 
-![#ff0000](https://placehold.it/12/ff0000?text=+) red!
-![#9900c5](https://placehold.it/15/9900c5?text=+) purple!
-![#157500](https://placehold.it/100/157500?text=+) cyan!
-![#00ff00](https://placehold.it/100/00ff00?text=+) green!
-
-**Red Blood Cells**
 
 
 Classify images of **DOGs** or **CATs** into their respective categories and check the localization capability of the **Global Max-Pooling** layer.
