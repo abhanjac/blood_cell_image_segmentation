@@ -17,13 +17,13 @@ So overall there are **9** objects and background, so **10** classes in the data
 * **1. Eosinophil** ![](https://placehold.it/20/00ffff?text=+)
 * **2. Basophil** ![](https://placehold.it/20/008080?text=+)
 * **3. Neutrophil** ![](https://placehold.it/20/fbbebe?text=+)
-* **4. Lymphocytes** ![#00ffff](https://placehold.it/20/00ffff?text=+)
-* **5. Monocytes** ![#00ffff](https://placehold.it/20/00ffff?text=+)
-* **6. Thrombocytes** ![#00ffff](https://placehold.it/20/00ffff?text=+)
-* **7. Platelet Clumps** ![#00ffff](https://placehold.it/20/00ffff?text=+)
-* **8. Infected RBC** ![#00ffff](https://placehold.it/20/00ffff?text=+)
-* **9. Healthy RBC** ![#00ffff](https://placehold.it/20/00ffff?text=+)
-* **10. background** ![#00ffff](https://placehold.it/20/00ffff?text=+)
+* **4. Lymphocytes** ![](https://placehold.it/20/808000?text=+)
+* **5. Monocytes** ![](https://placehold.it/20/00ffff?text=+)
+* **6. Thrombocytes** ![](https://placehold.it/20/00ffff?text=+)
+* **7. Platelet Clumps** ![](https://placehold.it/20/00ffff?text=+)
+* **8. Infected RBC** ![](https://placehold.it/20/00ffff?text=+)
+* **9. Healthy RBC** ![](https://placehold.it/20/00ffff?text=+)
+* **10. background** ![](https://placehold.it/20/00ffff?text=+)
 
 ![#ff0000](https://placehold.it/12/ff0000?text=+) red!
 ![#9900c5](https://placehold.it/15/9900c5?text=+) purple!
