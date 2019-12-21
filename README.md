@@ -15,12 +15,12 @@ The images in the dataset used here has the following types of cells: **2** type
 So overall there are **9** objects and background, so **10** classes in the dataset. And in the output predicted segmentation map will have the following colors for the different objects.
 
 * **1. Eosinophil** ![#00ffff](https://placehold.it/20/00ffff?text=+)
-* **2. Basophil** ![#00ffff](https://placehold.it/20/00ffff?text=+)
+* **2. Basophil** ![#008080](https://placehold.it/20/008080?text=+)
 * **3. Neutrophil** ![#00ffff](https://placehold.it/20/00ffff?text=+)
 * **4. Lymphocytes** ![#00ffff](https://placehold.it/20/00ffff?text=+)
 * **5. Monocytes** ![#00ffff](https://placehold.it/20/00ffff?text=+)
 * **6. Thrombocytes** ![#00ffff](https://placehold.it/20/00ffff?text=+)
-* **7. Clumps** ![#00ffff](https://placehold.it/20/00ffff?text=+)
+* **7. Platelet Clumps** ![#00ffff](https://placehold.it/20/00ffff?text=+)
 * **8. Infected RBC** ![#00ffff](https://placehold.it/20/00ffff?text=+)
 * **9. Healthy RBC** ![#00ffff](https://placehold.it/20/00ffff?text=+)
 * **10. background** ![#00ffff](https://placehold.it/20/00ffff?text=+)
