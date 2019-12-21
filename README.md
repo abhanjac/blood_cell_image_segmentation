@@ -25,33 +25,27 @@ So overall there are **9** objects and background, so **10** classes in the data
 * **9. Healthy RBC** ![](https://placehold.it/20/00ff00?text=+)
 * **10. background** ![](https://placehold.it/20/000000?text=+)
 
+# Dataset Creation:
 
 
-Classify images of **DOGs** or **CATs** into their respective categories and check the localization capability of the **Global Max-Pooling** layer.
 
-This project is to get a good hands on with the tensorflow and getting used to the deep learning concepts.
-Classification is the most basic task that deep learning models or deep neural networks can do. 
-This is a type of supervised learning where the input images of dogs or cats are given to a neural network along with their respective labels (which signifies whether the image is of a dog or a cat).
-The network initially misclassifies the images, but this error in classification is back propagated through the network to make changes to its internal weights and biases of the hidden layers.
-This way the network gradually identifies different features of the objects and starts to make correct classifications.
-The features that the network looks at are however markedly different from what humans use to classify objects. 
-The hidden layers of the network filters out different features from the images. Some of the initial hidden layers identify edges, some middle layers identify the shapes and the final layers identifies 
-other high level features (like complete parts of objects). But many of these features are so abstact that by looking at the hidden layer weights, it is not always possible to say what kind of features 
-they have got trained to identify.
+# Training with weights:
 
-The network is trained with large number of images and then it is tested on a set of unseen images to check the performance.
-
-# Requirements: 
-* The [training set](https://www.kaggle.com/c/dogs-vs-cats/download/train.zip) and [testing set](https://www.kaggle.com/c/dogs-vs-cats/download/test1.zip) of images can be downloaded from the [kaggle website](https://www.kaggle.com/c/dogs-vs-cats).
-* The training and testing sets have to be de-compressed into two separate folders called **train** and **test** respectively.
-* The training set has **25000** images out of which **5000** will be used to create a validation set and rest will be used for training. So, after de-compressing the training and testing sets, running the [utils.py](codes/utils.py) once, can create the validation set.
-* Testing set has **12500** images.
-* Training, validation and testing images are to be placed in folders named **train**, **valid** and **test** in the same directory that has the codes [train_classifier.py](codes/train_classifier.py).
-* This training does not necessarily needs GPUs, but they will make it much faster. This model is trained on one **NVIDIA P6000 Quadro GPU** in the [**Paperspace**](https://www.paperspace.com/) cloud platform.
 
 # Current Framework: 
 * Tensorflow 1.7.0 (with GPU preferred). 
 * Opencv libraries, Ubuntu 16.04, Python 3.6.3 (Anaconda).
+* This training does not necessarily needs GPUs, but they will make it much faster. This model is trained on one **NVIDIA P6000 Quadro GPU** in the [**Paperspace**](https://www.paperspace.com/) cloud platform.
+
+# 
+
+# Requirements: 
+* The training set and testing set of images are created by combining can be downloaded from the [kaggle website](https://www.kaggle.com/c/dogs-vs-cats).
+* The training and testing sets have to be de-compressed into two separate folders called **train** and **test** respectively.
+* The training set has **25000** images out of which **5000** will be used to create a validation set and rest will be used for training. So, after de-compressing the training and testing sets, running the [utils.py](codes/utils.py) once, can create the validation set.
+* Testing set has **12500** images.
+* Training, validation and testing images are to be placed in folders named **train**, **valid** and **test** in the same directory that has the codes [train_classifier.py](codes/train_classifier.py).
+
 
 # Data Preprocessing, Hyperarameter and Code Settings:
 **[NOTE] All these settings are specified in the [config.py](codes/config.py) file.**
