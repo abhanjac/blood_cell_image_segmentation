@@ -16,11 +16,9 @@ So overall there are **9** objects and background, so **10** classes in the data
 
 **1. Eosinophil (Cyan)**
 
-
-<div class="text-purple">
-  This text is purple, <a href="#" class="text-inherit">including the link</a>
-</div>
-
+- ![#ff0000](https://placehold.it/12/ff0000?text=+) red!
+- ![#9900c5](https://placehold.it/15/9900c5?text=+) purple!
+- ![#157500](https://placehold.it/20/157500?text=+) green!
 
 
 
