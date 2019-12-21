@@ -18,9 +18,7 @@ So overall there are **9** objects and background, so **10** classes in the data
 
 - ![#ff0000](https://placehold.it/12/ff0000?text=+) red!
 - ![#9900c5](https://placehold.it/15/9900c5?text=+) purple!
-- ![#157500](https://placehold.it/20/157500?text=+) green!
-
-
+- ![#157500](https://placehold.it/100/157500?text=+) cyan!
 
 **Red Blood Cells**
 
