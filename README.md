@@ -1,5 +1,5 @@
 # Objective: 
-gmentation of different blood cells in a digitized blood smear image.
+Segmentation of different blood cells in a digitized blood smear image.
 
 This project is to get a hands on with semantic segmentation of images using convolutional neural networks.
 
