@@ -14,7 +14,7 @@ The images in the dataset used here has the following types of cells: **2** type
 **2** types of Platelets: **Thrombocytes** (individual platelet cells) and **Platelet Clumps** (bunch of platelets appearing as a cluster).
 So overall there are **9** objects and background, so **10** classes in the dataset. And in the output predicted segmentation map will have the following colors for the different objects.
 
-* **1. Eosinophil** ![](https://placehold.it/20/00ffff?text=+) [here](https://placehold.it/20/00ffff?text=+)
+* **1. Eosinophil** ![](https://placehold.it/20/00ffff?text=+) ![](https://placehold.it/20/00ffff/000000?text=+) `kjhkh`
 * **2. Basophil** ![](https://placehold.it/20/008080?text=+)
 * **3. Neutrophil** ![](https://placehold.it/20/fbbebe?text=+)
 * **4. Lymphocytes** ![](https://placehold.it/20/808000?text=+)
