@@ -14,16 +14,16 @@ The images in the dataset used here has the following types of cells: **2** type
 **2** types of Platelets: **Thrombocytes** (individual platelet cells) and **Platelet Clumps** (bunch of platelets appearing as a cluster).
 So overall there are **9** objects and background, so **10** classes in the dataset. And in the output predicted segmentation map will have the following colors for the different objects.
 
-* **1. Eosinophil** ![](https://placehold.it/20/00ffff?text=+) `(color: cyan)`
-* **2. Basophil** ![](https://placehold.it/20/008080?text=+) `(color: teal)`
-* **3. Neutrophil** ![](https://placehold.it/20/fbbebe?text=+)
-* **4. Lymphocytes** ![](https://placehold.it/20/808000?text=+)
-* **5. Monocytes** ![](https://placehold.it/20/000080?text=+)
-* **6. Thrombocytes** ![](https://placehold.it/20/ffff00?text=+)
-* **7. Platelet Clumps** ![](https://placehold.it/20/ff00ff?text=+)
-* **8. Infected RBC** ![](https://placehold.it/20/ff0000?text=+)
-* **9. Healthy RBC** ![](https://placehold.it/20/00ff00?text=+)
-* **10. background** ![](https://placehold.it/20/000000?text=+)
+* **1. Eosinophil** ![](https://placehold.it/20/00ffff?text=+)   `(color: cyan)`
+* **2. Basophil** ![](https://placehold.it/20/008080?text=+)   `(color: teal)`
+* **3. Neutrophil** ![](https://placehold.it/20/fbbebe?text=+)   `(color: pink)`
+* **4. Lymphocytes** ![](https://placehold.it/20/808000?text=+)   `(color: olive)`
+* **5. Monocytes** ![](https://placehold.it/20/000080?text=+)   `(color: navy)`
+* **6. Thrombocytes** ![](https://placehold.it/20/ffff00?text=+)   `(color: yellow)`
+* **7. Platelet Clumps** ![](https://placehold.it/20/ff00ff?text=+)   `(color: magenta)`
+* **8. Infected RBC** ![](https://placehold.it/20/ff0000?text=+)   `(color: red)`
+* **9. Healthy RBC** ![](https://placehold.it/20/00ff00?text=+)   `(color: green)`
+* **10. background** ![](https://placehold.it/20/000000?text=+)   `(color: black)`
 
 # Dataset Creation:
 The images used for creating the training, testing and validation datasets are obtained from four different databases: 
