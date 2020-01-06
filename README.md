@@ -34,8 +34,16 @@ The images used for creating the training, testing and validation datasets are o
 
 The main reason to combine all these different databases is the unavailability of a single annotated database that contains all types of blood cells (mentioned earlier) along with malaria infected RBCs.
 
+For a robust training of the CNN, the training dataset should have a wide variety of combinations of the different blood cells. 
+For example, there should be images with an Eosinophil and a Basophil with healthy RBCs in the background, images with a Monocyte and Platelet clumps on a background containing both healthy and infected RBCs, images containing only Lymphocytes on a background of infected RBCs, etc. None of the databases mentioned earlier has this much variety. 
+Additionally, total number of WBC images over all the databases is around $391$, which is not sufficient for a good training. Hence, a fresh dataset was created which has the desired variations, using images from the previously mentioned databases as building blocks.
 
-
+As a first step, a set of images is created that has only one kind of cell in them along with their binary masks. This is done for the LISC, KAGGLE, and MAMIC images. IUMC images are already in this format. 
+The region of WBCs in the LISC images are cropped off using their masks to create individual images of WBCs. LISC and IUMC provides all the required WBC samples. 
+One set of infected and healthy RBCs are obtained from KAGGLE. THRs, Platelet clumps and another set of infected and healthy RBCs are cropped out manually from several MAMIC images. 
+The binary masks of the samples obtained from KAGGLE and MAMIC are created using simple image thresholding technique. 
+Finally, all these newly created samples are resized such that they are similar in size to cells seen under a microscope with $40\times$ magnification. Some of these final samples are shown in Fig.~\ref{fig:modified_images}. 
+The total number of samples obtained in this manner for different cells is given in 
 
 # Training with weights:
 
