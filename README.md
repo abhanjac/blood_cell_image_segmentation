@@ -42,8 +42,8 @@ As a first step, a set of images is created that has only one kind of cell in th
 The region of WBCs in the LISC images are cropped off using their masks to create individual images of WBCs. LISC and IUMC provides all the required WBC samples. 
 One set of infected and healthy RBCs are obtained from KAGGLE. THRs, Platelet clumps and another set of infected and healthy RBCs are cropped out manually from several MAMIC images. 
 The binary masks of the samples obtained from KAGGLE and MAMIC are created using simple image thresholding technique. 
-Finally, all these newly created samples are resized such that they are similar in size to cells seen under a microscope with $40\times$ magnification. Some of these final samples are shown in Fig.~\ref{fig:modified_images}. 
-The total number of samples obtained in this manner for different cells is given in 
+Finally, all these newly created samples are resized such that they are similar in size to cells seen under a microscope with **40x** magnification. Some of these final samples are shown in Fig.~\ref{fig:modified_images}. 
+The total number of samples obtained in this manner for different cells is given below: 
 
 | Cell Types | LISC | IUMC | MAMIC | KAGGLE |
 |:----------:|:----:|:----:|:-----:|:------:|
@@ -57,6 +57,11 @@ The total number of samples obtained in this manner for different cells is given
 | Infected RBC | - | - | 407 | 13779 |
 | Healthy RBC | - | - | 3539 | 13779 |
 
+First, all of the different types of image samples shown in the above table are separated into three groups namely: **training samples** (comprising **80%** of all the samples), **testing samples** (comprising **10%** of all the samples) and **validation samples** (comprising **10%** of all the samples). Only images from the training samples set are used to create the synthetic training dataset. Similarly, only images from the testing and validation samples sets are used to create the images for testing and validation datasets, respectively. This is done so that there are no common samples between the three datasets created and the neural networks never see any testing samples during training.
+
+The size of the images in these datasets are **224 x 224** pixels. At first, some **1000 x 1000** background images are created that contain only RBCs in them. This is done by affixing randomly selected RBC samples on a blank image at random places. These locations are also recorded in a separate list. Altogether, **1500** such background images are created. **500** of these have only infected RBCs, **500** have only healthy RBCs, and **500** have a mix of both. Then, **224 x 224** blocks are cropped out of these images from random locations and WBC, THR and Platelet clump samples are affixed in them randomly. For each such image, the class names of the objects and the position and size of their bounding boxes are recorded in a separate list. The samples are also rotated at random angles while affixing them. Some sample images obtained are shown in following figure.
+
+ 
 
 
 
