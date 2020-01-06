@@ -75,10 +75,6 @@ The total number of images in the final training, testing and validation sets ar
 But the datasets being too big are not added to this github repository.
 
 
-
-
-
-
 # Training with weights:
 
 
