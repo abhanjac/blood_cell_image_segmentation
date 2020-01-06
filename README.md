@@ -1,15 +1,15 @@
 # Objective: 
 Segmentation of different blood cells in a digitized blood smear image.
 
-This project is to create a semantic segmentation map of of digitized blood smear images of different blood cells using a convolutional neural networks.
-This is also done to get a hands on with the segmentation networks.
+This project is to create a semantic segmentation map of digitized blood smear images containing different blood cells using a convolutional neural networks.
+This is also done to get a hands on with segmentation networks.
 
 The neural network used here is a modified version of the [U-Net](https://arxiv.org/abs/1505.04597) segmentation network.
 This network takes in a **224 x 224** image as input. This is a simple RGB colored image obtained from a digital microscope showing the different blood cells in a blood smear on a slide at **40x** magnification.
 The network produces an output image which is also **224 x 224** pixels in size and shows the different **Red Blood Cells (RBC)**, **White Blood Cells (WBC)**, and **Platelets or Thrombocytes (THR)** regions in different colors.
 With enough training the neural network will be able to predict and color code the different regions of the input image with different colors thereby producing a semantic segmentation map of the input image.
 The network has to be first trained using a training dataset and validated with a validation dataset. After that it has to tested on a completely unseen test dataset to check its performance.
-The images in the dataset used here has the following types of cells: **2** types of RBCs: **Infected RBC** (RBCs infected with plasmodium falciparum malarial parasite), **Healthy RBC**; 
+The images in the dataset used here has the following types of cells: **2** types of RBCs: **Infected RBC** (RBCs infected with malarial parasite), **Healthy RBC**; 
 **5** types of WBCs: **Eosinophil**, **Basophil**, **Neutrophil**, **Lymphocytes**, and **Monocytes**; 
 **2** types of Platelets: **Thrombocytes** (individual platelet cells) and **Platelet Clumps** (bunch of platelets appearing as a cluster).
 So overall there are **9** objects and background, so **10** classes in the dataset. And in the output predicted segmentation map will have the following colors for the different objects.
@@ -26,6 +26,14 @@ So overall there are **9** objects and background, so **10** classes in the data
 * **10. background** ![](https://placehold.it/20/000000?text=+)
 
 # Dataset Creation:
+The images used for creating the training, testing and validation datasets are obtained from four different databases: 
+* **Leukocyte Images for Segmentation and Classification (LISC) database**: This contains images of five types of WBCs on a background of RBCs. The images are labeled by the type of WBC in them, and each image also has a binary mask that indicates the pixels representing the WBC region.
+* **Isfahan University of Medical Science (IUMC) database**: This has labeled images of individual WBCs with their binary masks. However, this database does not have Basophil images.
+* **MAMIC database**: It has large blood smear images of healthy RBCs, THRs, Platelet clumps and Malaria infected RBCs. Occasionally, WBCs also appear in the MAMIC images, but they are not labelled. Every image contains multiple cells, without any binary masks to separate them.
+* **KAGGLE database**: This contains images of individual healthy and infected RBCs, but without any binary masks. All the Malarial infection images in the last two databases are with Plasmodium Falciparum pathogen.
+
+The main reason to combine all these different databases is the unavailability of a single annotated database that contains all types of blood cells (mentioned earlier) along with malaria infected RBCs.
+
 
 
 
@@ -37,7 +45,7 @@ So overall there are **9** objects and background, so **10** classes in the data
 * Opencv libraries, Ubuntu 16.04, Python 3.6.3 (Anaconda).
 * This training does not necessarily needs GPUs, but they will make it much faster. This model is trained on one **NVIDIA P6000 Quadro GPU** in the [**Paperspace**](https://www.paperspace.com/) cloud platform.
 
-# 
+# Modifications from original U-Net:
 
 # Requirements: 
 * The training set and testing set of images are created by combining can be downloaded from the [kaggle website](https://www.kaggle.com/c/dogs-vs-cats).
