@@ -1,0 +1,122 @@
+{
+    "0": {
+        "className": "Monocytes",
+        "classIdx": 4,
+        "posX": 178,
+        "posY": 172,
+        "bboxW": 84,
+        "bboxH": 95,
+        "tlX": 136,
+        "tlY": 124,
+        "samplePath": "processed_data_lisc/Monocytes/train/Monocytes_8.bmp",
+        "bgPath": "processed_data_lisc/only_infected_rbc_background_lisc/train/back_II_train_393.bmp"
+    },
+    "1": {
+        "className": "Clumps",
+        "classIdx": 7,
+        "posX": 133,
+        "posY": 66,
+        "bboxW": 68,
+        "bboxH": 131,
+        "tlX": 99,
+        "tlY": 0,
+        "samplePath": "processed_data_iumc/Clumps/train/Clumps_(30).bmp",
+        "bgPath": "processed_data_lisc/only_infected_rbc_background_lisc/train/back_II_train_393.bmp"
+    },
+    "2": {
+        "className": "Infected",
+        "classIdx": 8,
+        "posX": 221,
+        "posY": 66,
+        "bboxW": 21,
+        "bboxH": 42,
+        "tlX": 201,
+        "tlY": 45,
+        "samplePath": null,
+        "bgPath": "processed_data_lisc/only_infected_rbc_background_lisc/train/back_II_train_393.bmp"
+    },
+    "3": {
+        "className": "Infected",
+        "classIdx": 8,
+        "posX": 220,
+        "posY": 121,
+        "bboxW": 20,
+        "bboxH": 36,
+        "tlX": 202,
+        "tlY": 103,
+        "samplePath": null,
+        "bgPath": "processed_data_lisc/only_infected_rbc_background_lisc/train/back_II_train_393.bmp"
+    },
+    "4": {
+        "className": "Infected",
+        "classIdx": 8,
+        "posX": 173,
+        "posY": 122,
+        "bboxW": 43,
+        "bboxH": 40,
+        "tlX": 151,
+        "tlY": 102,
+        "samplePath": null,
+        "bgPath": "processed_data_lisc/only_infected_rbc_background_lisc/train/back_II_train_393.bmp"
+    },
+    "5": {
+        "className": "Infected",
+        "classIdx": 8,
+        "posX": 78,
+        "posY": 123,
+        "bboxW": 34,
+        "bboxH": 38,
+        "tlX": 61,
+        "tlY": 104,
+        "samplePath": null,
+        "bgPath": "processed_data_lisc/only_infected_rbc_background_lisc/train/back_II_train_393.bmp"
+    },
+    "6": {
+        "className": "Infected",
+        "classIdx": 8,
+        "posX": 118,
+        "posY": 182,
+        "bboxW": 35,
+        "bboxH": 33,
+        "tlX": 100,
+        "tlY": 165,
+        "samplePath": null,
+        "bgPath": "processed_data_lisc/only_infected_rbc_background_lisc/train/back_II_train_393.bmp"
+    },
+    "7": {
+        "className": "Infected",
+        "classIdx": 8,
+        "posX": 36,
+        "posY": 71,
+        "bboxW": 43,
+        "bboxH": 42,
+        "tlX": 14,
+        "tlY": 50,
+        "samplePath": null,
+        "bgPath": "processed_data_lisc/only_infected_rbc_background_lisc/train/back_II_train_393.bmp"
+    },
+    "8": {
+        "className": "Infected",
+        "classIdx": 8,
+        "posX": 56,
+        "posY": 126,
+        "bboxW": 43,
+        "bboxH": 50,
+        "tlX": 34,
+        "tlY": 101,
+        "samplePath": null,
+        "bgPath": "processed_data_lisc/only_infected_rbc_background_lisc/train/back_II_train_393.bmp"
+    },
+    "9": {
+        "className": "Infected",
+        "classIdx": 8,
+        "posX": 28,
+        "posY": 196,
+        "bboxW": 38,
+        "bboxH": 31,
+        "tlX": 9,
+        "tlY": 180,
+        "samplePath": null,
+        "bgPath": "processed_data_lisc/only_infected_rbc_background_lisc/train/back_II_train_393.bmp"
+    }
+}

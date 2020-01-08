@@ -1,0 +1,110 @@
+{
+    "0": {
+        "className": "Eosinophil",
+        "classIdx": 0,
+        "posX": 110,
+        "posY": 66,
+        "bboxW": 100,
+        "bboxH": 83,
+        "tlX": 60,
+        "tlY": 24,
+        "samplePath": "processed_data_lisc/Eosinophil/train/Eosinophil_29.bmp",
+        "bgPath": "processed_data_lisc/only_normal_rbc_background_lisc/train/back_NN_train_164.bmp"
+    },
+    "1": {
+        "className": "Neutrophil",
+        "classIdx": 2,
+        "posX": 113,
+        "posY": 168,
+        "bboxW": 84,
+        "bboxH": 87,
+        "tlX": 71,
+        "tlY": 124,
+        "samplePath": "processed_data_lisc/Neutrophil/train/Neutrophil_33.bmp",
+        "bgPath": "processed_data_lisc/only_normal_rbc_background_lisc/train/back_NN_train_164.bmp"
+    },
+    "2": {
+        "className": "_",
+        "classIdx": 9,
+        "posX": 47,
+        "posY": 173,
+        "bboxW": 39,
+        "bboxH": 39,
+        "tlX": 27,
+        "tlY": 153,
+        "samplePath": null,
+        "bgPath": "processed_data_lisc/only_normal_rbc_background_lisc/train/back_NN_train_164.bmp"
+    },
+    "3": {
+        "className": "_",
+        "classIdx": 9,
+        "posX": 115,
+        "posY": 221,
+        "bboxW": 38,
+        "bboxH": 18,
+        "tlX": 96,
+        "tlY": 204,
+        "samplePath": null,
+        "bgPath": "processed_data_lisc/only_normal_rbc_background_lisc/train/back_NN_train_164.bmp"
+    },
+    "4": {
+        "className": "_",
+        "classIdx": 9,
+        "posX": 178,
+        "posY": 211,
+        "bboxW": 39,
+        "bboxH": 31,
+        "tlX": 158,
+        "tlY": 192,
+        "samplePath": null,
+        "bgPath": "processed_data_lisc/only_normal_rbc_background_lisc/train/back_NN_train_164.bmp"
+    },
+    "5": {
+        "className": "_",
+        "classIdx": 9,
+        "posX": 170,
+        "posY": 146,
+        "bboxW": 26,
+        "bboxH": 32,
+        "tlX": 157,
+        "tlY": 130,
+        "samplePath": null,
+        "bgPath": "processed_data_lisc/only_normal_rbc_background_lisc/train/back_NN_train_164.bmp"
+    },
+    "6": {
+        "className": "_",
+        "classIdx": 9,
+        "posX": 192,
+        "posY": 86,
+        "bboxW": 38,
+        "bboxH": 39,
+        "tlX": 173,
+        "tlY": 66,
+        "samplePath": null,
+        "bgPath": "processed_data_lisc/only_normal_rbc_background_lisc/train/back_NN_train_164.bmp"
+    },
+    "7": {
+        "className": "_",
+        "classIdx": 9,
+        "posX": 161,
+        "posY": 60,
+        "bboxW": 27,
+        "bboxH": 30,
+        "tlX": 147,
+        "tlY": 45,
+        "samplePath": null,
+        "bgPath": "processed_data_lisc/only_normal_rbc_background_lisc/train/back_NN_train_164.bmp"
+    },
+    "8": {
+        "className": "_",
+        "classIdx": 9,
+        "posX": 220,
+        "posY": 109,
+        "bboxW": 23,
+        "bboxH": 39,
+        "tlX": 200,
+        "tlY": 89,
+        "samplePath": null,
+        "bgPath": "processed_data_lisc/only_normal_rbc_background_lisc/train/back_NN_train_164.bmp"
+    }
+}

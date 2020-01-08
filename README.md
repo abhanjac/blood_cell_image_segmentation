@@ -72,7 +72,7 @@ The size of the images in these datasets are **224 x 224** pixels. At first, som
 
 The total number of images in the final training, testing and validation sets are **65350**, **6560**, and **6560** respectively. All possible combinations of cells are present in among these images. 
 
-But the datasets being too big are not added to this github repository.
+But the datasets being too big are not added to this github repository. Some sample images are given in the [trial/images](trial/images) folder. Each of these images has a json file associated with them which contains the details of the objects present in the image along with the dimensions of the bounding box for that object. These are given in the [trial/labels](trial/labels) folder. Ground truth segmentation maps of the images are given in the [trial/segments](trial/segments) folder.
 
 
 # Training with weights:

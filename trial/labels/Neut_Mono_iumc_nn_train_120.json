@@ -1,0 +1,122 @@
+{
+    "0": {
+        "className": "Neutrophil",
+        "classIdx": 2,
+        "posX": 56,
+        "posY": 166,
+        "bboxW": 75,
+        "bboxH": 73,
+        "tlX": 18,
+        "tlY": 129,
+        "samplePath": "processed_data_iumc/Neutrophil/train/Neutrophil_23.bmp",
+        "bgPath": "processed_data_iumc/only_normal_rbc_background_iumc/train/back_NN_train_55.bmp"
+    },
+    "1": {
+        "className": "Monocytes",
+        "classIdx": 4,
+        "posX": 166,
+        "posY": 141,
+        "bboxW": 85,
+        "bboxH": 83,
+        "tlX": 123,
+        "tlY": 99,
+        "samplePath": "processed_data_iumc/Monocytes/train/Monocytes_3.bmp",
+        "bgPath": "processed_data_iumc/only_normal_rbc_background_iumc/train/back_NN_train_55.bmp"
+    },
+    "2": {
+        "className": "_",
+        "classIdx": 9,
+        "posX": 122,
+        "posY": 185,
+        "bboxW": 35,
+        "bboxH": 35,
+        "tlX": 104,
+        "tlY": 167,
+        "samplePath": null,
+        "bgPath": "processed_data_iumc/only_normal_rbc_background_iumc/train/back_NN_train_55.bmp"
+    },
+    "3": {
+        "className": "_",
+        "classIdx": 9,
+        "posX": 81,
+        "posY": 128,
+        "bboxW": 41,
+        "bboxH": 39,
+        "tlX": 60,
+        "tlY": 108,
+        "samplePath": null,
+        "bgPath": "processed_data_iumc/only_normal_rbc_background_iumc/train/back_NN_train_55.bmp"
+    },
+    "4": {
+        "className": "_",
+        "classIdx": 9,
+        "posX": 11,
+        "posY": 137,
+        "bboxW": 27,
+        "bboxH": 33,
+        "tlX": 0,
+        "tlY": 120,
+        "samplePath": null,
+        "bgPath": "processed_data_iumc/only_normal_rbc_background_iumc/train/back_NN_train_55.bmp"
+    },
+    "5": {
+        "className": "_",
+        "classIdx": 9,
+        "posX": 189,
+        "posY": 42,
+        "bboxW": 40,
+        "bboxH": 42,
+        "tlX": 169,
+        "tlY": 21,
+        "samplePath": null,
+        "bgPath": "processed_data_iumc/only_normal_rbc_background_iumc/train/back_NN_train_55.bmp"
+    },
+    "6": {
+        "className": "_",
+        "classIdx": 9,
+        "posX": 108,
+        "posY": 43,
+        "bboxW": 46,
+        "bboxH": 42,
+        "tlX": 85,
+        "tlY": 22,
+        "samplePath": null,
+        "bgPath": "processed_data_iumc/only_normal_rbc_background_iumc/train/back_NN_train_55.bmp"
+    },
+    "7": {
+        "className": "_",
+        "classIdx": 9,
+        "posX": 58,
+        "posY": 51,
+        "bboxW": 40,
+        "bboxH": 40,
+        "tlX": 38,
+        "tlY": 31,
+        "samplePath": null,
+        "bgPath": "processed_data_iumc/only_normal_rbc_background_iumc/train/back_NN_train_55.bmp"
+    },
+    "8": {
+        "className": "_",
+        "classIdx": 9,
+        "posX": 28,
+        "posY": 51,
+        "bboxW": 41,
+        "bboxH": 38,
+        "tlX": 7,
+        "tlY": 32,
+        "samplePath": null,
+        "bgPath": "processed_data_iumc/only_normal_rbc_background_iumc/train/back_NN_train_55.bmp"
+    },
+    "9": {
+        "className": "_",
+        "classIdx": 9,
+        "posX": 13,
+        "posY": 9,
+        "bboxW": 32,
+        "bboxH": 27,
+        "tlX": 0,
+        "tlY": 0,
+        "samplePath": null,
+        "bgPath": "processed_data_iumc/only_normal_rbc_background_iumc/train/back_NN_train_55.bmp"
+    }
+}
