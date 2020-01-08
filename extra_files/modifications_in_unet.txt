@@ -1,0 +1,12 @@
+The unet model is modified to suit our need.
+
+The unet input is changed from 572x572x1 to 224x224x3 so that it can take in the images from our dataset.
+Instead of using valid convolution we used same padding.
+
+up convolution:
+https://www.tensorflow.org/versions/r1.15/api_docs/python/tf/layers/conv2d_transpose?hl=pt-BRGoogle
+
+https://github.com/zhixuhao/unet/blob/master/model.py
+
+https://github.com/tensorflow/tensorflow/issues/18711
+

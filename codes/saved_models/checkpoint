@@ -1,0 +1,6 @@
+model_checkpoint_path: "tiny_yolo_ckpt-35"
+all_model_checkpoint_paths: "tiny_yolo_ckpt-31"
+all_model_checkpoint_paths: "tiny_yolo_ckpt-32"
+all_model_checkpoint_paths: "tiny_yolo_ckpt-33"
+all_model_checkpoint_paths: "tiny_yolo_ckpt-34"
+all_model_checkpoint_paths: "tiny_yolo_ckpt-35"
