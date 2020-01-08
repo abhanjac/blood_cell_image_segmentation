@@ -27,7 +27,7 @@ So overall there are **9** objects and background, so **10** classes in the data
 
 # Dataset Creation:
 The images used for creating the training, testing and validation datasets are obtained from four different databases: 
-* **Leukocyte Images for Segmentation and Classification (LISC) database**: This contains images of five types of WBCs on a background of RBCs. The images are labeled by the type of WBC in them, and each image also has a binary mask that indicates the pixels representing the WBC region.
+* [**Leukocyte Images for Segmentation and Classification (LISC) database**](): This contains images of five types of WBCs on a background of RBCs. The images are labeled by the type of WBC in them, and each image also has a binary mask that indicates the pixels representing the WBC region.
 * **Isfahan University of Medical Science (IUMC) database**: This has labeled images of individual WBCs with their binary masks. However, this database does not have Basophil images.
 * **MAMIC database**: It has large blood smear images of healthy RBCs, THRs, Platelet clumps and Malaria infected RBCs. Occasionally, WBCs also appear in the MAMIC images, but they are not labelled. Every image contains multiple cells, without any binary masks to separate them.
 * **KAGGLE database**: This contains images of individual healthy and infected RBCs, but without any binary masks. All the Malarial infection images in the last two databases are with Plasmodium Falciparum pathogen.
@@ -75,15 +75,11 @@ The total number of images in the final training, testing and validation sets ar
 But the datasets being too big are not added to this github repository. Some sample images are given in the [trial/images](trial/images) folder. Each of these images has a json file associated with them which contains the details of the objects present in the image along with the dimensions of the bounding box for that object. These are given in the [trial/labels](trial/labels) folder. Ground truth segmentation maps of the images are given in the [trial/segments](trial/segments) folder.
 
 
-# Training with weights:
-
-
 # Current Framework: 
 * Tensorflow 1.7.0 (with GPU preferred). 
 * Opencv libraries, Ubuntu 16.04, Python 3.6.3 (Anaconda).
 * This training does not necessarily needs GPUs, but they will make it much faster. This model is trained on one **NVIDIA P6000 Quadro GPU** in the [**Paperspace**](https://www.paperspace.com/) cloud platform.
 
-# Modifications from original U-Net:
 
 # Requirements: 
 * The training set and testing set of images are created by combining can be downloaded from the [kaggle website](https://www.kaggle.com/c/dogs-vs-cats).
@@ -91,6 +87,16 @@ But the datasets being too big are not added to this github repository. Some sam
 * The training set has **25000** images out of which **5000** will be used to create a validation set and rest will be used for training. So, after de-compressing the training and testing sets, running the [utils.py](codes/utils.py) once, can create the validation set.
 * Testing set has **12500** images.
 * Training, validation and testing images are to be placed in folders named **train**, **valid** and **test** in the same directory that has the codes [train_classifier.py](codes/train_classifier.py).
+
+
+
+# Training with weights:
+
+
+
+
+# Modifications from original U-Net:
+
 
 
 # Data Preprocessing, Hyperarameter and Code Settings:
