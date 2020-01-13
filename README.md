@@ -81,22 +81,18 @@ But the datasets being too big are not added to this github repository. Some sam
 * This training does not necessarily needs GPUs, but they will make it much faster. This model is trained on one **NVIDIA P6000 Quadro GPU** in the [**Paperspace**](https://www.paperspace.com/) cloud platform.
 
 
-# Requirements: 
-* The training set and testing set of images are created by combining can be downloaded from the [kaggle website](https://www.kaggle.com/c/dogs-vs-cats).
-* The training and testing sets have to be de-compressed into two separate folders called **train** and **test** respectively.
-* The training set has **25000** images out of which **5000** will be used to create a validation set and rest will be used for training. So, after de-compressing the training and testing sets, running the [utils.py](codes/utils.py) once, can create the validation set.
-* Testing set has **12500** images.
-* Training, validation and testing images are to be placed in folders named **train**, **valid** and **test** in the same directory that has the codes [train_classifier.py](codes/train_classifier.py).
-
-
-
 # Training with weights:
 
 
 
 
 # Modifications from original U-Net:
+The [U-Net](extra_files/Unet.pdf) model is one of the most widely known model used for semantic segmentation task. It was used by the authors for cell segmentation in light microscopy images.
 
+[](images/unet_model_diagram.png)
+
+In this work, we use a modified version of the U-Net for creating segmentation maps for each input image. The original U-Net architecture is too big; hence, the depth of all the layers are reduced to half the original size. The height and width of the layers are also modified to handle **224 x 224** images as shown in above figure. This figure can be compared with the figure in the [original paper](extra_files/Unet.pdf) to observe the difference in the structure.
+Everything else in the model stays the same, and the final layer uses a softmax layer for every pixel of the output map. Basically every pixel of the output map is classified into one of the **10** classes in the datasset (as mentioned earlier).
 
 
 # Data Preprocessing, Hyperarameter and Code Settings:
