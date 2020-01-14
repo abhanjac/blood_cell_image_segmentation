@@ -8,3 +8,5 @@ Segmentation of different blood cells in a digitized blood smear image.
 [**YouTube Link**](https://www.youtube.com/watch?v=iXx_U7ga3FU&feature=youtu.be)
 
 ---
+
+This project is to create a semantic segmentation map of digitized blood smear images containing different blood cells using a convolutional neural networks.
