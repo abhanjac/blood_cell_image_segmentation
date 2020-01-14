@@ -144,29 +144,13 @@ Basophil and Thrombocyte on a background of infected RBCs. **Left:** Input image
 
 # Observations and Discussions:
 
-The heat map does not always engulfs the complete object as is seen in the next set of figures. 
 
-![cat_image_2_with_prediction](images/cat_image_2_with_prediction.png)
-![cat_image_2_gmp_layer_superimposed](images/cat_image_2_with_gmp_layer_superimposed.png)
-
-![dog_image_2_with_prediction](images/dog_image_2_with_prediction.png)
-![dog_image_2_gmp_layer_superimposed](images/dog_image_2_with_gmp_layer_superimposed.png)
-
-This is because the most important features required to classify the object is often only a part of the object and not its complete body.
-In case of cats for most of the images, the most red part of the heat map was near the face of the cat. As that is the most significant feature to identify it (as per the networks judgement). The same is true for dogs as well.
-
-However, in cases where the face of the cat or dog is not sufficient to identify it, the network looks for other features from other part of the object (as seen in the first set of figures).
-This is also evident from the following image of the dog. In this image because the face of the dog is not highlighted properly (due to a dark environment), so the network focusses on the legs of the dog to classify it.
-
-![dog_image_3_with_prediction](images/dog_image_3_with_prediction.png)
-![dog_image_3_gmp_layer_superimposed](images/dog_image_3_with_gmp_layer_superimposed.png)
 
 ### An overall look of the images with the superimposed heat maps is shown below.
 
-![cat](images/cat.gif)
-![dog](images/dog.gif)
+![](images/blood_cell_segmentation.gif)
 
-The video of this detection can also be found on [Youtube](https://www.youtube.com/) at this [link](https://www.youtube.com/watch?v=gws5meW1_o0).
+The video of this detection can also be found on [Youtube](https://www.youtube.com/) at this [link](https://www.youtube.com/watch?v=iXx_U7ga3FU&feature=youtu.be).
 
 
 
