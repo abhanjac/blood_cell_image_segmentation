@@ -81,18 +81,20 @@ But the datasets being too big are not added to this github repository. Some sam
 * This training does not necessarily needs GPUs, but they will make it much faster. This model is trained on one **NVIDIA P6000 Quadro GPU** in the [**Paperspace**](https://www.paperspace.com/) cloud platform.
 
 
-# Training with weights:
-
-
-
-
 # Modifications from original U-Net:
 The [U-Net](extra_files/Unet.pdf) model is one of the most widely known model used for semantic segmentation task. It was used by the authors for cell segmentation in light microscopy images.
 
 ![](images/unet_model_diagram.png)
 
 In this work, we use a modified version of the U-Net for creating segmentation maps for each input image. The original U-Net architecture is too big; hence, the depth of all the layers are reduced to half the original size. The height and width of the layers are also modified to handle **224 x 224** images as shown in above figure. This figure can be compared with the figure in the [original paper](extra_files/Unet.pdf) to observe the difference in the structure.
+The other difference is that we have not used **valid** padding in the convolution layers as the original paper, we have used **same** padding instead for the ease of concatenation of the feature maps. 
 Everything else in the model stays the same, and the final layer uses a softmax layer for every pixel of the output map. Basically every pixel of the output map is classified into one of the **10** classes in the datasset (as mentioned earlier).
+
+
+# Training with weights:
+Since the output of this segmentation network will be a segmented map of the input image, so the classification is done on the pixel level. Hence, here to make a good overall training performance, the dataset has to be balanced in terms of the number of pixels of the different classes in the dataset. I.e. the total number of pixels in each of the **10** different classes in the dataset has to be pretty much the same to have an unbiased training. Otherwise the network will only focus on performing well for the class that has the most number of pixels, because reducing the classification error for that class will reduce the overall error by the maximum amount since such pixels are the majority in number.
+
+But since all the objects have different sizes, it is not possible to ensure that all the classes have pretty much the same number of pixels. Hence, while calculating the error during training, weights are used to make every type of pixel contribute similarly to the overall error. This is done by using a weight map along with the ground truth segmentation map for each input image during training. The weight map is also a **224 x 224** image but here each of the pixels represent a value that gives the weight to be applied to the classification error for that corresponding pixel in the ground truth segmentation map. These weight maps are created on the fly while training.
 
 
 # Data Preprocessing, Hyperarameter and Code Settings:
