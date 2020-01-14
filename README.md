@@ -151,14 +151,14 @@ Basophil and Thrombocyte on a background of infected RBCs. **Left:** Input image
 
 
 # Observations and Discussions:
+The results shows that the network is capable of creating a very good prediction of the segmentation maps. But in some cases some objects are predicted where the output map is a mix of two colors. Instead of the whole region representing the object be of the same color, part of it is of the correct color, and part of it is of a differet color. This shows that in some cases the network does get confused about what the object is and predicts part of the object as something else.
 
 
-
-### An overall look of the images with the superimposed heat maps is shown below.
+### An overall look of the results on several example images is shown below.
 
 ![](images/blood_cell_segmentation.gif)
 
-The video of this detection can also be found on [Youtube](https://www.youtube.com/) at this [link](https://www.youtube.com/watch?v=iXx_U7ga3FU&feature=youtu.be).
+The video of this result can also be found on [Youtube](https://www.youtube.com/) at this [link](https://www.youtube.com/watch?v=iXx_U7ga3FU&feature=youtu.be).
 
 
 
