@@ -130,14 +130,10 @@ These information from this json file are reloaded into the model to restart the
 | 95.62 % | 95.37 % | 94.48 % |
 
 
-### Prediction label superimposed on the input image fed to the network.
+### Some example predicted input images and segmentation map from the network:
 
-![cat_image_1_with_prediction](images/cat_image_1_with_prediction.png)
-![dog_image_1_with_prediction](images/dog_image_1_with_prediction.png)
-
-Next, the regions where the network focusses to find the most important features to classify the object is found out.
-This is represented by the heat map shown below, obtained from the GMP layer.
-This is found out in the same manner as explained in the [Weakly-supervised learning with convolutional neural networks paper](http://leon.bottou.org/publications/pdf/cvpr-2015.pdf).
+![Monocyte and Platelet Clump on a background of healthy RBCs](images/Mono_Clum_iumc_nn_train_192.bmp)
+![Basophil and Thrombocyte on a background of infected RBCs](images/Baso_Thro_lisc_ii_train_137.bmp)
 
 
 # Observations and Discussions:
