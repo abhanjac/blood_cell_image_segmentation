@@ -142,12 +142,12 @@ These information from this json file are reloaded into the model to restart the
 
 ![](images/Mono_Clum_iumc_nn_train_192.bmp)
 
-Monocyte and Platelet Clump on a background of healthy RBCs. **Left:** Input image; **Right:** Predicted segmentation map.
+Monocyte ![](https://placehold.it/20/000080?text=+) and Platelet Clump ![](https://placehold.it/20/ff00ff?text=+) on a background of Healthy RBCs ![](https://placehold.it/20/00ff00?text=+). **Left:** Input image; **Right:** Predicted segmentation map.
 
 
 ![](images/Baso_Thro_lisc_ii_train_137.bmp)
 
-Basophil and Thrombocyte on a background of infected RBCs. **Left:** Input image; **Right:** Predicted segmentation map.
+Basophil ![](https://placehold.it/20/008080?text=+) and Thrombocyte ![](https://placehold.it/20/ffff00?text=+) on a background of Infected RBCs ![](https://placehold.it/20/ff0000?text=+). **Left:** Input image; **Right:** Predicted segmentation map.
 
 
 # Observations and Discussions:
