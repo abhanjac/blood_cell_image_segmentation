@@ -133,10 +133,12 @@ These information from this json file are reloaded into the model to restart the
 ### Some example predicted input images and segmentation map from the network:
 
 ![](images/Mono_Clum_iumc_nn_train_192.bmp)
+
 Monocyte and Platelet Clump on a background of healthy RBCs
 
 
 ![](images/Baso_Thro_lisc_ii_train_137.bmp)
+
 Basophil and Thrombocyte on a background of infected RBCs
 
 
