@@ -121,15 +121,14 @@ A **json** file is also saved along with the checkpoint, which contains the foll
 
 These information from this json file are reloaded into the model to restart the training, in case the training process got stopped or interrupted because of any reason.
 
-After classification the localzation ability of the GMP layers are tested and the results are shown in the result section.
-
 
 # Results:
-### The final accuracies of the model are as follows:
+### The final pixel level accuracies of the model are as follows:
 
 | Training Accuracy | Validation Accuracy | Testing Accuracy |
 |:-----------------:|:-------------------:|:----------------:|
-| 99.99 % | 93.57 % | 93.48 % |
+| 95.62 % | 95.37 % | 94.48 % |
+
 
 ### Prediction label superimposed on the input image fed to the network.
 
