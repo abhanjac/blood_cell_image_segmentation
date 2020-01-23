@@ -24,3 +24,4 @@ So overall there are **9** objects and background, so **10** classes in the data
 
 * **1. Eosinophil** ![](https://placehold.it/20/00ffff?text=+)   `(color: cyan)`
 * **2. Basophil** ![](https://placehold.it/20/008080?text=+)   `(color: teal)`
+* **3. Neutrophil** ![](https://placehold.it/20/fbbebe?text=+)   `(color: pink)`
