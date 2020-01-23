@@ -23,3 +23,4 @@ The images in the dataset used here has the following types of cells: **2** type
 So overall there are **9** objects and background, so **10** classes in the dataset. And in the output predicted segmentation map will have the following colors for the different objects.
 
 * **1. Eosinophil** ![](https://placehold.it/20/00ffff?text=+)   `(color: cyan)`
+* **2. Basophil** ![](https://placehold.it/20/008080?text=+)   `(color: teal)`
