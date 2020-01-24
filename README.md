@@ -27,3 +27,4 @@ So overall there are **9** objects and background, so **10** classes in the data
 * **3. Neutrophil** ![](https://placehold.it/20/fbbebe?text=+)   `(color: pink)`
 * **4. Lymphocytes** ![](https://placehold.it/20/808000?text=+)   `(color: olive)`
 * **5. Monocytes** ![](https://placehold.it/20/000080?text=+)   `(color: navy)`
+* **6. Thrombocytes** ![](https://placehold.it/20/ffff00?text=+)   `(color: yellow)`
