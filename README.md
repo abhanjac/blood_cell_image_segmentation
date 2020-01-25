@@ -29,3 +29,4 @@ So overall there are **9** objects and background, so **10** classes in the data
 * **5. Monocytes** ![](https://placehold.it/20/000080?text=+)   `(color: navy)`
 * **6. Thrombocytes** ![](https://placehold.it/20/ffff00?text=+)   `(color: yellow)`
 * **7. Platelet Clumps** ![](https://placehold.it/20/ff00ff?text=+)   `(color: magenta)`
+* **8. Infected RBC** ![](https://placehold.it/20/ff0000?text=+)   `(color: red)`
