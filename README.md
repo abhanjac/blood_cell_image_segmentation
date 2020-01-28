@@ -42,3 +42,7 @@ The images used for creating the training, testing and validation datasets are o
 are with Plasmodium Falciparum pathogen.
 
 The main reason to combine all these different databases is the unavailability of a single annotated database that contains all types of blood cells (mentioned earlier) along with malaria infected RBCs.
+
+For a robust training of the CNN, the training dataset should have a wide variety of combinations of the different blood cells. 
+
+For a robust training of the CNN, the training dataset should have a wide variety of combinations of the different blood cells. 
