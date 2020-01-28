@@ -32,3 +32,5 @@ So overall there are **9** objects and background, so **10** classes in the data
 * **8. Infected RBC** ![](https://placehold.it/20/ff0000?text=+)   `(color: red)`
 * **9. Healthy RBC** ![](https://placehold.it/20/00ff00?text=+)   `(color: green)`
 * **10. background** ![](https://placehold.it/20/000000?text=+)   `(color: black)`
+
+# Dataset Creation:
