@@ -44,3 +44,4 @@ are with Plasmodium Falciparum pathogen.
 The main reason to combine all these different databases is the unavailability of a single annotated database that contains all types of blood cells (mentioned earlier) along with malaria infected RBCs.
 
 For a robust training of the CNN, the training dataset should have a wide variety of combinations of the different blood cells. 
+For example, there should be images with an Eosinophil and a Basophil with healthy RBCs in the background, images with a Monocyte and Platelet clumps on a background containing both healthy and infected RBCs, images containing only Lymphocytes on 
