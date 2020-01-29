@@ -45,3 +45,4 @@ The main reason to combine all these different databases is the unavailability o
 
 For a robust training of the CNN, the training dataset should have a wide variety of combinations of the different blood cells. 
 For example, there should be images with an Eosinophil and a Basophil with healthy RBCs in the background, images with a Monocyte and Platelet clumps on a background containing both healthy and infected RBCs, images containing only Lymphocytes on 
+a background of infected RBCs, etc. None of the databases mentioned earlier has this much variety. 
