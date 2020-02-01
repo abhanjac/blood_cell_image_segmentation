@@ -51,3 +51,4 @@ Additionally, total number of WBC images over all the databases is around **391*
 As a first step, a set of images is created that has only one kind of cell in them along with their binary masks. This is done for the LISC, KAGGLE, and MAMIC images. IUMC images are already in this format. 
 The region of WBCs in the LISC images are cropped off using their masks to create individual images of WBCs. LISC and IUMC provides all the required WBC samples. 
 One set of infected and healthy RBCs are obtained from KAGGLE. THRs, Platelet clumps and another set of infected and healthy RBCs are cropped out manually from several MAMIC images. 
+The binary masks of the samples obtained from KAGGLE and MAMIC are created using simple image thresholding technique. 
