@@ -54,3 +54,5 @@ One set of infected and healthy RBCs are obtained from KAGGLE. THRs, Platelet cl
 The binary masks of the samples obtained from KAGGLE and MAMIC are created using simple image thresholding technique. 
 Finally, all these newly created samples are resized such that they are similar in size to cells seen under a microscope with **40x** magnification. Some of these final samples are shown in Fig.~\ref{fig:modified_images}. 
 The total number of samples obtained in this manner for different cells is given below: 
+
+| Cell Types | LISC | IUMC | MAMIC | KAGGLE |
