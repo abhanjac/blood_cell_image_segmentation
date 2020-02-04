@@ -58,3 +58,4 @@ The total number of samples obtained in this manner for different cells is given
 | Cell Types | LISC | IUMC | MAMIC | KAGGLE |
 |:----------:|:----:|:----:|:-----:|:------:|
 | Eosinophil | 37 | 42 | - | - |
+| Basophil | 50 | - | - | - |
