@@ -56,3 +56,4 @@ Finally, all these newly created samples are resized such that they are similar 
 The total number of samples obtained in this manner for different cells is given below: 
 
 | Cell Types | LISC | IUMC | MAMIC | KAGGLE |
+|:----------:|:----:|:----:|:-----:|:------:|
