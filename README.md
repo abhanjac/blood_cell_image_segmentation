@@ -61,3 +61,4 @@ The total number of samples obtained in this manner for different cells is given
 | Basophil | 50 | - | - | - |
 | Neutrophil | 47 | 38 | - | - |
 | Lymphocyte | 45 | 32 | - | - |
+| Monocyte | 48 | 36 | - | - |
