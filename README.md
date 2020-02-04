@@ -65,3 +65,4 @@ The total number of samples obtained in this manner for different cells is given
 | Thrombocyte | - | - | 82 | - |
 | Platelet clump | - | - | 36 | - |
 | Infected RBC | - | - | 407 | 13779 |
+| Healthy RBC | - | - | 3539 | 13779 |
