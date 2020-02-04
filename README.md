@@ -63,3 +63,4 @@ The total number of samples obtained in this manner for different cells is given
 | Lymphocyte | 45 | 32 | - | - |
 | Monocyte | 48 | 36 | - | - |
 | Thrombocyte | - | - | 82 | - |
+| Platelet clump | - | - | 36 | - |
