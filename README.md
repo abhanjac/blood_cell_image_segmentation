@@ -59,3 +59,4 @@ The total number of samples obtained in this manner for different cells is given
 |:----------:|:----:|:----:|:-----:|:------:|
 | Eosinophil | 37 | 42 | - | - |
 | Basophil | 50 | - | - | - |
+| Neutrophil | 47 | 38 | - | - |
