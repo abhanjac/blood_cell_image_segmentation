@@ -66,3 +66,6 @@ The total number of samples obtained in this manner for different cells is given
 | Platelet clump | - | - | 36 | - |
 | Infected RBC | - | - | 407 | 13779 |
 | Healthy RBC | - | - | 3539 | 13779 |
+
+
+**The following flowchart shows how the training, testing and validation datasets are created.**
