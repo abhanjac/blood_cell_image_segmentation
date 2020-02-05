@@ -69,3 +69,5 @@ The total number of samples obtained in this manner for different cells is given
 
 
 **The following flowchart shows how the training, testing and validation datasets are created.**
+
+![](images/dataset_creation_flowchart.png)
