@@ -86,3 +86,4 @@ But the datasets being too big are not added to this github repository. Some sam
 
 
 # Current Framework: 
+* Tensorflow 1.7.0 (with GPU preferred). 
