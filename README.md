@@ -71,3 +71,6 @@ The total number of samples obtained in this manner for different cells is given
 **The following flowchart shows how the training, testing and validation datasets are created.**
 
 ![](images/dataset_creation_flowchart.png)
+
+
+First, all of the different types of image samples shown in the above table are separated into three groups namely: **training samples** (comprising **80%** of all the samples), **testing samples** (comprising **10%** of all the samples) and 
