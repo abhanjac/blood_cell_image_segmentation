@@ -93,3 +93,5 @@ But the datasets being too big are not added to this github repository. Some sam
 
 # Modifications from original U-Net architecture:
 The [U-Net](extra_files/Unet.pdf) model is one of the most widely known model used for semantic segmentation task. It was used by the authors for cell segmentation in light microscopy images.
+
+![](images/unet_model_diagram.png)
