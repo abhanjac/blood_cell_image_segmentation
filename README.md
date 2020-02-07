@@ -89,3 +89,6 @@ But the datasets being too big are not added to this github repository. Some sam
 * Tensorflow 1.7.0 (with GPU preferred). 
 * Opencv libraries, Ubuntu 16.04, Python 3.6.3 (Anaconda).
 * This training does not necessarily needs GPUs, but they will make it much faster. This model is trained on one **NVIDIA P6000 Quadro GPU** in the [**Paperspace**](https://www.paperspace.com/) cloud platform.
+
+
+# Modifications from original U-Net architecture:
