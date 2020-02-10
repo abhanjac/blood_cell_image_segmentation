@@ -95,3 +95,5 @@ But the datasets being too big are not added to this github repository. Some sam
 The [U-Net](extra_files/Unet.pdf) model is one of the most widely known model used for semantic segmentation task. It was used by the authors for cell segmentation in light microscopy images.
 
 ![](images/unet_model_diagram.png)
+
+In this work, we use a modified version of the U-Net for creating segmentation maps for each input image. The original U-Net architecture is too big; hence, the depth of all the layers are reduced to half the original size. The height and width 
