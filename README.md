@@ -113,3 +113,6 @@ But since all the objects have different sizes, it is not possible to ensure tha
 * [**unet_model_6.py**](codes/unet_model_6.py): The model along with its associated functions are defined here.
 * [**unet_training_2.py**](codes/unet_training_2.py): The training process is started using this script.
 * [**unet_testing_2_modified.py**](codes/unet_testing_2_modified.py): Evaluates the output on fresh images one by one.
+
+
+# Data Preprocessing, Hyperarameter and a short description of Training:
