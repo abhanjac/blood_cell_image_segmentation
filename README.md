@@ -100,3 +100,6 @@ In this work, we use a modified version of the U-Net for creating segmentation m
 of the layers are also modified to handle **224 x 224** images as shown in above figure. This figure can be compared with the figure in the [original paper](extra_files/Unet.pdf) to observe the difference in the structure.
 The other difference is that we have not used **valid** padding in the convolution layers as the original paper, we have used **same** padding instead for the ease of concatenation of the feature maps. 
 Everything else in the model stays the same, and the final layer uses a softmax layer for every pixel of the output map. Basically every pixel of the output map is classified into one of the **10** classes in the datasset (as mentioned earlier).
+
+
+# Training with weights:
