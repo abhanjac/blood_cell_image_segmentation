@@ -103,4 +103,4 @@ Everything else in the model stays the same, and the final layer uses a softmax 
 
 
 # Training with weights:
-Since the output of this segmentation network will be a segmented map of the input image, so the classification is done on the pixel level. Hence, here to make a good overall training performance, the dataset has to be balanced in terms of the 
+Since the output of this segmentation network will be a segmented map of the input image, so the classification is done on the pixel level. Hence, here to make a good overall training performance, the dataset has to be balanced in terms of the number of pixels of the different classes in the dataset. I.e. the total number of pixels in each of the **10** different classes in the dataset has to be pretty much the same to have an unbiased training. Otherwise the network will only focus on 
