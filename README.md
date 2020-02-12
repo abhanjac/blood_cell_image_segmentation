@@ -116,3 +116,4 @@ But since all the objects have different sizes, it is not possible to ensure tha
 
 
 # Data Preprocessing, Hyperarameter and a short description of Training:
+**[NOTE] All these settings are specified in the [utils_2.py](codes/utils_2.py) file.**
