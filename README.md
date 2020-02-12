@@ -97,3 +97,4 @@ The [U-Net](extra_files/Unet.pdf) model is one of the most widely known model us
 ![](images/unet_model_diagram.png)
 
 In this work, we use a modified version of the U-Net for creating segmentation maps for each input image. The original U-Net architecture is too big; hence, the depth of all the layers are reduced to half the original size. The height and width 
+of the layers are also modified to handle **224 x 224** images as shown in above figure. This figure can be compared with the figure in the [original paper](extra_files/Unet.pdf) to observe the difference in the structure.
