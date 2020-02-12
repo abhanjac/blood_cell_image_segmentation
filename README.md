@@ -110,3 +110,4 @@ But since all the objects have different sizes, it is not possible to ensure tha
 
 # Scripts and their Functions:
 * [**utils_2.py**](codes/utils_2.py): All important functions for creating batches, creating the dataset etc. along with some extra functions are defined here.
+* [**unet_model_6.py**](codes/unet_model_6.py): The model along with its associated functions are defined here.
