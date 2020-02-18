@@ -38,14 +38,12 @@ The images used for creating the training, testing and validation datasets are o
 * [**Leukocyte Images for Segmentation and Classification (LISC) database**](http://users.cecs.anu.edu.au/~hrezatofighi/publications.htm): This contains images of five types of WBCs on a background of RBCs. The images are labeled by the type of WBC in them, and each image also has a binary mask that indicates the pixels representing the WBC region.
 * [**Isfahan University of Medical Science (IUMC) database**](https://misp.mui.ac.ir/fa): This has labeled images of individual WBCs with their binary masks. However, this database does not have Basophil images.
 * [**MAMIC database**](http://fimm.webmicroscope.net/Research/Momic): It has large blood smear images of healthy RBCs, THRs, Platelet clumps and Malaria infected RBCs. Occasionally, WBCs also appear in the MAMIC images, but they are not labelled. Every image contains multiple cells, without any binary masks to separate them.
-* [**KAGGLE database**](https://www.kaggle.com/iarunava/cell-images-for-detecting-malaria): This contains images of individual healthy and infected RBCs, but without any binary masks. All the Malarial infection images in the last two databases 
-are with Plasmodium Falciparum pathogen.
+* [**KAGGLE database**](https://www.kaggle.com/iarunava/cell-images-for-detecting-malaria): This contains images of individual healthy and infected RBCs, but without any binary masks. All the Malarial infection images in the last two databases are with Plasmodium Falciparum pathogen.
 
 The main reason to combine all these different databases is the unavailability of a single annotated database that contains all types of blood cells (mentioned earlier) along with malaria infected RBCs.
 
 For a robust training of the CNN, the training dataset should have a wide variety of combinations of the different blood cells. 
-For example, there should be images with an Eosinophil and a Basophil with healthy RBCs in the background, images with a Monocyte and Platelet clumps on a background containing both healthy and infected RBCs, images containing only Lymphocytes on 
-a background of infected RBCs, etc. None of the databases mentioned earlier has this much variety. 
+For example, there should be images with an Eosinophil and a Basophil with healthy RBCs in the background, images with a Monocyte and Platelet clumps on a background containing both healthy and infected RBCs, images containing only Lymphocytes on a background of infected RBCs, etc. None of the databases mentioned earlier has this much variety. 
 Additionally, total number of WBC images over all the databases is around **391**, which is not sufficient for a good training. Hence, a fresh dataset was created which has the desired variations, using images from the previously mentioned databases as building blocks.
 
 As a first step, a set of images is created that has only one kind of cell in them along with their binary masks. This is done for the LISC, KAGGLE, and MAMIC images. IUMC images are already in this format. 
@@ -96,8 +94,7 @@ The [U-Net](extra_files/Unet.pdf) model is one of the most widely known model us
 
 ![](images/unet_model_diagram.png)
 
-In this work, we use a modified version of the U-Net for creating segmentation maps for each input image. The original U-Net architecture is too big; hence, the depth of all the layers are reduced to half the original size. The height and width 
-of the layers are also modified to handle **224 x 224** images as shown in above figure. This figure can be compared with the figure in the [original paper](extra_files/Unet.pdf) to observe the difference in the structure.
+In this work, we use a modified version of the U-Net for creating segmentation maps for each input image. The original U-Net architecture is too big; hence, the depth of all the layers are reduced to half the original size. The height and width of the layers are also modified to handle **224 x 224** images as shown in above figure. This figure can be compared with the figure in the [original paper](extra_files/Unet.pdf) to observe the difference in the structure.
 The other difference is that we have not used **valid** padding in the convolution layers as the original paper, we have used **same** padding instead for the ease of concatenation of the feature maps. 
 Everything else in the model stays the same, and the final layer uses a softmax layer for every pixel of the output map. Basically every pixel of the output map is classified into one of the **10** classes in the datasset (as mentioned earlier).
 
@@ -119,3 +116,51 @@ But since all the objects have different sizes, it is not possible to ensure tha
 **[NOTE] All these settings are specified in the [utils_2.py](codes/utils_2.py) file.**
 * Images are all resized into **224 x 224 x 3** size before feeding into the network.
 * **Batch size: 100**
+* **Epochs: 35**
+* **Learning rate: 0.001 (upto epoch 1 - 5), 0.0001 (epoch 6 - 35)**. 
+* A record of the **latest maximum validation accuracy** is also kept separately in a variable.
+* The trained neural network model is saved if the validation accuracy in the current epoch is **better** than the latest maximum validation accuracy. 
+
+A **json** file is also saved along with the checkpoint, which contains the following details: 
+* Epoch, Batch size and Learning rate.
+* Mean and Standard deviation of the training set.
+* Latest maximum validation accuracy and minimum validation error.
+* A statistics of the epoch, learning rate, training loss, training accuracy and validation accuracy upto the current epoch.
+
+These information from this json file are reloaded into the model to restart the training, in case the training process got stopped or interrupted because of any reason.
+
+
+# Results:
+### The final pixel level accuracies of the model are as follows:
+
+| Training Accuracy | Validation Accuracy | Testing Accuracy |
+|:-----------------:|:-------------------:|:----------------:|
+| 95.62 % | 95.37 % | 93.48 % |
+
+
+### Some example predicted input images and segmentation map from the network:
+
+![](images/Mono_Clum_iumc_nn_train_192.bmp)
+
+Monocyte ![](https://placehold.it/20/000080?text=+) and Platelet Clump ![](https://placehold.it/20/ff00ff?text=+) on a background of Healthy RBCs ![](https://placehold.it/20/00ff00?text=+). **Left:** Input image; **Right:** Predicted segmentation map.
+
+
+![](images/Baso_Thro_lisc_ii_train_137.bmp)
+
+Basophil ![](https://placehold.it/20/008080?text=+) and Thrombocyte ![](https://placehold.it/20/ffff00?text=+) on a background of Infected RBCs ![](https://placehold.it/20/ff0000?text=+). **Left:** Input image; **Right:** Predicted segmentation map.
+
+
+# Observations and Discussions:
+The results shows that the network is capable of creating a very good prediction of the segmentation maps. But in some cases some objects are predicted where the output map is a mix of two colors. Instead of the whole region representing the object be of the same color, part of it is of the correct color, and part of it is of a differet color. This shows that in some cases the network does get confused about what the object is and predicts part of the object as something else.
+
+
+### An overall look of the results on several example images is shown below.
+
+![](images/blood_cell_segmentation.gif)
+
+The video of this result can also be found on [Youtube](https://www.youtube.com/) at this [link](https://www.youtube.com/watch?v=iXx_U7ga3FU&feature=youtu.be).
+
+
+
+
+
