@@ -75,6 +75,8 @@ colorDict = { 'red':   [0,0,255],    'green':   [0,255,0],     'yellow': [0,225,
 # This dictionary gives the weights to be assigned to the pixels of different 
 # colors, since the number of pixels of different colors is not the same which 
 # may make the segmentation network biased toward any particular pixel color.
+# The weight of each pixel is inversely proportional to the percentage of those 
+# kind of pixels in the overall set of training images.
 classIdxToSegColorWeight = { 0: 57.496, 1: 109.076, 2: 58.761, 3: 104.468, \
                              4: 42.830, 5: 163.219, 6: 1177.220, 7: 467.332, \
                              8: 7.553,  9: 7.948,   10: 1.524 }
