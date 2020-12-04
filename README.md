@@ -1,5 +1,5 @@
 # Objective: 
-Segmentation of different blood cells in a digitized blood smear image.
+This project shows an automated deep learning based computer vision algorithm that can provide a complete blood cell count (i.e. the number red blood cells, number of white blood cells, different types of white blood cells, number of plateletes etc.) in a person's body from a digitized blood smear image of his blood sample. The neural network used here is a modified version of the Unet framework that identifies different type of blood cells and semantically segments them creating the output image where the different cell regions are indicated with different colors. Additionally, it can also detect the presence of malarial pathogens in the blood. The final test accuracy obtained by the network was 93%.
 
 **A *Trailer* of Final Result:**
 
@@ -96,7 +96,7 @@ The [U-Net](extra_files/Unet.pdf) model is one of the most widely known model us
 
 In this work, we use a modified version of the U-Net for creating segmentation maps for each input image. The original U-Net architecture is too big; hence, the depth of all the layers are reduced to half the original size. The height and width of the layers are also modified to handle **224 x 224** images as shown in above figure. This figure can be compared with the figure in the [original paper](extra_files/Unet.pdf) to observe the difference in the structure.
 The other difference is that we have not used **valid** padding in the convolution layers as the original paper, we have used **same** padding instead for the ease of concatenation of the feature maps. 
-Everything else in the model stays the same, and the final layer uses a softmax layer for every pixel of the output map. Basically every pixel of the output map is classified into one of the **10** classes in the datasset (as mentioned earlier) using softmax function. Softmax cross entropy loss is used for the loss function.
+Everything else in the model stays the same, and the final layer uses a softmax layer for every pixel of the output map. Basically every pixel of the output map is classified into one of the **10** classes in the datasset (as mentioned earlier) using softmax function. **Softmax cross entropy loss** is used for the loss function and **Adam optimizer** was used for optimizing the loss.
 
 
 # Training with weights:
